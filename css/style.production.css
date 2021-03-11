@@ -127,7 +127,7 @@ a:active {
   display: grid ;
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px;
+  -ms-margin: 50px;
 }
 .grid__item {
   background-color:var(--box-color);
