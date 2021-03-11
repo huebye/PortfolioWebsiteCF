@@ -38,7 +38,7 @@ body {
 }
 .body_content {
   display: block;
-  text-align: var(--text-align-center);
+  text-align: center;
   margin-top: 80px;
 }
 h1 {
