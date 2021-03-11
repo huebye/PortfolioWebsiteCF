@@ -125,6 +125,7 @@ a:active {
 .grid {
   display: -ms-grid ;
   display: -ms-grid ;
+  display: -ms-grid ;
   display: grid ;
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -170,7 +171,8 @@ button:hover, button:focus,.button:hover,.button:focus {
   background-color: inherit;
 }
 .form-block:hover {
-  box-shadow: 4px 3px 19px 0px #A1A2A7;
+  -webkit-box-shadow: 4px 3px 19px 0px #A1A2A7;
+          box-shadow: 4px 3px 19px 0px #A1A2A7;
 }
 #contact-email, #contact-name {
   width: 130px;
