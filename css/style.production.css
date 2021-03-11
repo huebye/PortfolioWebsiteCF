@@ -119,8 +119,8 @@ a:active {
 #checkout_link {
   font-size: 22px;
 }
-#contact_link {
-  font-size: 20px;
+.contact_link {
+  font-size: 20px !important;
 }
 .grid {
   display: -ms-grid ;
@@ -159,31 +159,39 @@ button,.button {
 button:hover, button:focus,.button:hover,.button:focus {
   cursor: pointer;
   opacity: 0.8;
-  text: visible;
 }
 .form-block {
   display: inline-block;
   text-align: var(--text-align-center);
-  border: solid;
+  border: solid #E15F55;
+  border-width: medium;
   border-radius: 10px;
   padding: 30px 25px;
-  background-color: var(--form-bg-color);
+  background-color: inherit;
+}
+.form-block:hover {
+  box-shadow: 4px 3px 19px 0px #A1A2A7;
 }
 #contact-email, #contact-name {
   width: 130px;
+  height: auto;
+  font-size: 16px;
 }
 #contact-message {
   max-width: 130px;
   max-height: 150px;
-}
-label{
-  padding: 5px;
+  font-size: 16px;
 }
 .standard-label {
   display: inline-block;
+  font-size: 18px;
   width: 60px;
+  padding: 5px;
   text-align: right;
-  margin: 0 auto;
+}
+textarea {
+  margin-top: 10px;
+  border: inherit;
 }
 .form-button {
   padding-top: 20px;

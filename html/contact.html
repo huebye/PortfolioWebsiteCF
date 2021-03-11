@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HUEBYE CONTACT</title>
-      <link rel="shortcut icon" href="../img/favicon-16x16.png" aria-hidden>
+      <link rel="shortcut icon" href="../img/favicon-16x16.png" aria-hidden="true">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="../css/style.production.css">
 </head>
+<body>
   <header class="page-header">
-    <img class="navigation_item" id="logo_header"src="../img/HUEBYE.png" alt="Personal Logo of HUEBYE a text logo in uppercase letters that consists of the name of the company">
-      <nav class="navigationbar page-header_item" role="navigationbar">
-          <a class="navigation_item" href="../index.html" role="navigationitem">Home</a>
-          <a class="navigation_item" href="about.html" role="navigationitem">About</a>
-          <a class="navigation_item" href="work.html" role="navigationitem">Work</a>
-          <a class="navigation_item" href="contact.html" role="navigationitem">Contact</a>
+    <img class="navigation_item" id="logo_header" src="../img/HUEBYE.png" alt="Personal Logo of HUEBYE a text logo in uppercase letters that consists of the name of the company">
+      <nav class="navigationbar page-header_item" role="navigation">
+          <a class="navigation_item" href="../index.html">Home</a>
+          <a class="navigation_item" href="about.html">About</a>
+          <a class="navigation_item" href="work.html">Work</a>
+          <a class="navigation_item" href="contact.html">Contact</a>
       </nav>
   </header>
-<body>
   <div class="body_content">
    <h1>Contact</h1>
         <p>Huebye GmbH<br>
@@ -26,22 +26,22 @@
            10559 Berlin<br>
            Deutschland<br></p>
         <br>
-      Tel: <a id="contact_link" href="tel:+49 152 03107596" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">+49 152 03107596</a><br>
-      Email: <a id="contact_link" href="mailto:thomashuebner94@gmx.de">thomashuebner94@gmx.de</a>
+      Tel: <a class="contact_link" href="tel:+4915203107596">+49 152 03107596</a><br>
+      Email: <a class="contact_link" href="mailto:thomashuebner94@gmx.de">thomashuebner94@gmx.de</a>
 
     <br>
       <h2 id="contact_me">Contact me</h2>
       <p>Let's chat about your next big thing! Feel free to contact me.</p>
     <br>
     <div class="form-block">
-     <form action="" method="post" id="contact-form" aria-label="contact formular to fill in your details">
-      <label class="standard-label" for="contact-name">Name</label>
+     <form method="post" id="contact-form" aria-label="contact formular to fill in your details">
+      <label class="standard-label" for="contact-name">Name:</label>
       <input type="text" id="contact-name" required aria-label="section to fill in your name">
     <br>
-      <label class="standard-label" for="contact-email">Email</label>
+      <label class="standard-label" for="contact-email">Email:</label>
       <input type="text" id="contact-email" required aria-label="section to fill in your emial adress">
     <br>
-      <label class="standard-label" for="contact-message">Request</label>
+      <label class="standard-label" for="contact-message">Request:</label>
       <textarea id="contact-message" placeholder="Hey Huebye, I'd like to contact you ...." required aria-label="section to fill in your request"></textarea>
     <br>
     <div class="form-button">
@@ -49,10 +49,10 @@
       <button type="submit" id="submit-button">Send Message</button>
       <label for="reset-button"></label>
       <button type="reset" id="reset-button">Reset</button>
-     </form>
-   </div>
+    </div>
+   </form>
   </div>
-</body>
+</div>
     <footer class="footer">
      <p>Find me on</p>
      <div class="social_media">
@@ -62,4 +62,5 @@
      </div>
     </footer>
   <script src="../js/tota11y.min.js"></script>
+</body>
 </html>
