@@ -8,6 +8,9 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style type="text/css">
+         .no-fouc {display: none;}
+    </style>
  </head>
  <body>
   <header class="page-header">
@@ -34,6 +37,8 @@
         <a class="social_media_logo" target="_blank" href="https://twitter.com/?lang=de"><img src="./img/iconfinder_43-twitter_104461.svg" alt="Twitter Logo displaying a link to Huebye´s Twitter account"></a>
     </div>
   </footer>
-    <script src="./js/tota11y.min.js" ></script>
+    <script src="./js/tota11y.min.js" type="text/javascript">
+        document.documentElement.className = 'no-fouc'
+    </script>
 </body>
 </html>
