@@ -239,6 +239,7 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 180px;
+  margin: auto;
 }
 .social_media_logo {
   padding: 5px;
