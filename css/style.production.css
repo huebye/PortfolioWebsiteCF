@@ -228,7 +228,7 @@ table {
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
 .footer {
-  text-align: var(--text-align-center);
+  text-align: center;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
