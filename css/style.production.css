@@ -255,6 +255,7 @@ table {
   .grid__item {
     background-color:var(--box-color);
     padding: 10px;
+    grid-column: repeat(6, 1fr);
     border-radius: 15px;
     border-bottom: 4px solid;
     border-bottom-color: var(--border-bottom-color);
