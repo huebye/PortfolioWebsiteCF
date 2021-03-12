@@ -131,6 +131,8 @@ a:active {
   -ms-margin: 50px;
 }
 .grid__item {
+  grid-column: auto;
+  grid-row: auto;
   background-color:var(--box-color);
   padding: 10px;
   border-radius: 15px;
