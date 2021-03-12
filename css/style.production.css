@@ -166,7 +166,6 @@ button:hover, button:focus,.button:hover,.button:focus {
   border-width: medium;
   border-radius: 10px;
   padding: 30px 25px;
-  background-color: inherit;
 }
 .form-block:hover {
   -webkit-box-shadow: 4px 3px 19px 0px #A1A2A7;
