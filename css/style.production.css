@@ -248,14 +248,13 @@ table {
 @supports (display: grid) {
   .grid {
     display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 15px;
     margin: 50px;
   }
   .grid__item {
     background-color:var(--box-color);
     padding: 10px;
-    grid-column: repeat(6, 1fr);
     border-radius: 15px;
     border-bottom: 4px solid;
     border-bottom-color: var(--border-bottom-color);
