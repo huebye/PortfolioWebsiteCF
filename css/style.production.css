@@ -248,7 +248,14 @@ table {
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
     -ms-margin: 50px;
+  }
+  .grid__item{
+    width: auto;
+    min-height: auto;
+    margin: 0;
   }
   .grid__item__1 {
     grid-column: 1/4;
