@@ -244,6 +244,7 @@ table {
 .social_media_logo {
   padding: 5px;
 }
+
 @supports (display: grid) {
   .grid {
     display: grid ;
@@ -254,9 +255,6 @@ table {
   .grid__item {
     background-color:var(--box-color);
     padding: 10px;
-    width: auto;
-    min-height: auto;
-    margin: 0;
     border-radius: 15px;
     border-bottom: 4px solid;
     border-bottom-color: var(--border-bottom-color);
