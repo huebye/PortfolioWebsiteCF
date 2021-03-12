@@ -334,17 +334,17 @@ table {
 
 @@supports (display: grid) {
   .grid {
-    display: -ms-grid ;
     display: grid ;
-    -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
-    -ms-margin: 50px;
+    margin: 50px;
   }
   .grid__item {
     background-color:var(--box-color);
     padding: 10px;
+    width: auto;
+    min-height: auto;
+    margin: 0;
     border-radius: 15px;
     border-bottom: 4px solid;
     border-bottom-color: var(--border-bottom-color);
