@@ -249,8 +249,6 @@ table {
   .grid {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-template-columns: 1fr 1fr 1fr;
     -ms-margin: 50px;
   }
   .grid__item {
