@@ -248,15 +248,7 @@ table {
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
-    display: grid;
     -ms-margin: 50px;
-  }
-  .grid__item {
-    background-color: #DBCEBC;
-    padding: 10px;
-    border-radius: 15px;
-    border-bottom: 4px solid;
-    border-bottom-color: var(--border-bottom-color);
   }
   .grid__item__1 {
     grid-column: 1/4;
