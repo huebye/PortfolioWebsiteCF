@@ -248,7 +248,8 @@ table {
 @supports (display: grid) {
   .grid {
     display: grid ;
-    -ms-grid-template-columns: repeat(3,1fr);
+    -ms-grid-columns: repeat(3, 1fr);
+    -ms-grid-rows: repeat(2, 1fr);
     grid-gap: 15px;
     margin: 50px;
   }
