@@ -24,6 +24,10 @@ Secondary Color (orange): #E85A4F;
    --border-bottom-color: #85837F;
    --text-align-center: center;
  }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 body {
   background-color: var(--background-color);
   font-family: 'Bebas Neue';
@@ -296,6 +300,7 @@ table {
     fill: #f76414;
   }
 }
+
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
