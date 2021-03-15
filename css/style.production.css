@@ -24,7 +24,7 @@ Secondary Color (orange): #E85A4F;
    --border-bottom-color: #85837F;
    --text-align-center: center;
  }
- 
+
 body {
   background-color: var(--background-color);
   font-family: 'Bebas Neue';
@@ -124,27 +124,44 @@ a:active {
 #checkout_link {
   font-size: 22px;
 }
+
 .contact_link {
   font-size: 20px !important;
 }
-.grid {
-  display: -ms-grid ;
-  display: grid ;
-  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
-  -ms-margin: 50px;
+
+/* start grid fallback */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .grid__item {
-  background-color:var(--box-color);
-  padding: 10px;
-  border-radius: 15px;
-  border-bottom: 4px solid;
-  border-bottom-color: var(--border-bottom-color);
+   width: 100%;
 }
 
-button,.button {
+/* end grid fallback */
+
+@supports (display: grid) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    -ms-margin: 50px;
+  }
+
+  .grid__item {
+    background-color: var(--box-color);
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom: 4px solid;
+    border-bottom-color: var(--border-bottom-color);
+  }
+}
+
+button,
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -162,32 +179,41 @@ button,.button {
   -o-transition: 0.4s opacity ease-in-out;
   transition: 0.4s opacity ease-in-out;
 }
-button:hover, button:focus,.button:hover,.button:focus {
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
+
 .form-block {
   display: inline-block;
   text-align: var(--text-align-center);
-  border: solid #E15F55;
+  border: solid #e15f55;
   border-width: medium;
   border-radius: 10px;
   padding: 30px 25px;
 }
+
 .form-block:hover {
-  -webkit-box-shadow: 4px 3px 19px 0px #A1A2A7;
-          box-shadow: 4px 3px 19px 0px #A1A2A7;
+  -webkit-box-shadow: 4px 3px 19px 0 #A1A2A7;
+          box-shadow: 4px 3px 19px 0 #A1A2A7;
 }
+
 #contact-email, #contact-name {
   width: 130px;
   height: auto;
   font-size: 16px;
 }
+
 #contact-message {
   max-width: 130px;
   max-height: 150px;
   font-size: 16px;
 }
+
 .standard-label {
   display: inline-block;
   font-size: 18px;
@@ -195,10 +221,12 @@ button:hover, button:focus,.button:hover,.button:focus {
   padding: 5px;
   text-align: right;
 }
+
 textarea {
   margin-top: 10px;
   border: inherit;
 }
+
 .form-button {
   padding-top: 20px;
 }
@@ -209,14 +237,17 @@ table {
   border-spacing: 18px;
   margin: auto;
 }
+
 .berlin-animation {
   text-align: center;
   padding-top: 120px;
 }
+
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
           animation: 4s color-change infinite alternate linear;
 }
+
 .cloud-front {
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
@@ -229,10 +260,12 @@ table {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
+
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 .footer {
   text-align: center;
   clear: both;
@@ -246,6 +279,7 @@ table {
   margin-top: 180px;
   margin: auto;
 }
+
 .social_media_logo {
   padding: 5px;
 }
@@ -263,6 +297,7 @@ table {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
@@ -275,6 +310,7 @@ table {
     font-size: 32px;
   }
 }
+
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
@@ -286,6 +322,7 @@ table {
     fill: #f76414;
   }
 }
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -308,6 +345,7 @@ table {
             transform: translate(150px, 50px);
   }
 }
+
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
@@ -318,6 +356,7 @@ table {
             transform: translate(150px, 50px);
   }
 }
+
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
@@ -328,6 +367,7 @@ table {
             transform: translate(100px, 48px);
   }
 }
+
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
