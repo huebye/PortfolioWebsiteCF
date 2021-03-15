@@ -130,6 +130,7 @@ a:active {
   grid-gap: 15px;
   -ms-margin: 50px;
 }
+
 .grid__item {
   background-color:var(--box-color);
   padding: 10px;
