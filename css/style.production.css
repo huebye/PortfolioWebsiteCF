@@ -125,6 +125,10 @@ a {
   margin: 40px;
 }
 
+.profile_photo:hover {
+  transform: scale(1.2);
+}
+
 a:visited {
   color: black;
 }
