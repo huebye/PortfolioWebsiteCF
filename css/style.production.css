@@ -161,6 +161,11 @@ a:active {
 
 .grid__item {
   width: 33.3%;
+  background-color: #dbcebc;
+  border-radius: 15px;
+  padding: 10px;
+  border-bottom: 4px solid;
+  border-bottom-color: #85837f;
 }
 
 /* end grid fallback */
