@@ -160,11 +160,11 @@ a:active {
 }
 
 .grid__item {
-  width: 33.3%;
+  width: 32%;
   background-color: #dbcebc;
   border-radius: 15px;
   padding: 10px;
-  margin: 15px;
+  margin: 8px;
   border-bottom: 4px solid;
   border-bottom-color: #85837f;
 }
