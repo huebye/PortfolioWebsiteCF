@@ -123,10 +123,12 @@ a {
   float: left;
   width: 200px;
   margin: 40px;
+  transition: transform 1s;
 }
 
 .profile_photo:hover {
   transform: scale(1.2);
+  transition: transform 1s;
 }
 
 a:visited {
@@ -325,6 +327,12 @@ table {
 
 .social_media_logo {
   padding: 5px;
+  transition: transform 0.5s;
+}
+
+.social_media_logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 @media all and (max-width: 500px) {
