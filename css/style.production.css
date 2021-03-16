@@ -26,46 +26,60 @@ Secondary Color (orange): #E85A4F;
  }
 
 body {
+  background-color: #eae7dc; /* Fallback */
   background-color: var(--background-color);
   font-family: 'Bebas Neue';
   font-weight: 400;
   font-size: 16px;
+  color: #85837f; /* Fallback */
   color: var(--primar-color);
   line-height: 1.6;
 }
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .body_content {
   display: block;
   text-align: center;
   margin-top: 80px;
 }
+
 h1 {
   font-size: 43px;
   font-weight: 700;
+  color: #e85a4f; /* Fallback */
   color: var(--secondary-color);
 }
+
 h2 {
   font-size: 28px;
   font-weight: 500;
 }
+
 #contact_me {
+  color: #e85a4f; /* Fallback */
   color: var(--secondary-color);
 }
+
 h3 {
   font-size: 18px;
   font-weight: 300;
 }
+
 p {
   font-size: 18px;
 }
+
 a {
+  color: black; /* Fallback */
   color: var(--a-color);
   text-decoration: none;
   font-size: 25px;
 }
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,27 +87,32 @@ a {
   width: 100%;
   padding: 10px;
 }
+
 .navigation_item {
   display: inline-block;
   margin-left: 15px;
 }
+
 .page-header_item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 100px;
-          flex: 0 1 100px;
+  -ms-flex: 0 1 100px;
+  flex: 0 1 100px;
   padding: 10px;
 }
+
 .page-header_item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
+
 #logo_header {
   display: inline-block;
   width: 180px;
   height: 40px;
 }
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
@@ -110,13 +129,18 @@ a:visited {
   color: black;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
+  color: #e98074; /* Fallback */
   color: var(--secondary-color-ligher);
 }
+
 a:active {
+  color: #e85a4f; /* Fallback */
   color: var(--secondary-color);
 }
+
 #cv_link:hover {
   color: black;
 }
@@ -153,11 +177,13 @@ a:active {
   }
 
   .grid__item {
+    background-color: #dbcebc; /* Fallback */
     background-color: var(--box-color);
     padding: 10px;
     border-radius: 15px;
     width: auto;
     border-bottom: 4px solid;
+    border-bottom-color: #85837f; /* Fallback */
     border-bottom-color: var(--border-bottom-color);
   }
 }
@@ -167,6 +193,7 @@ button,
   border: none;
   display: inline-block;
   font-family: inherit;
+  background-color: #e85a4f; /* Fallback */
   background-color: var(--secondary-color);
   color: black;
   text-decoration: none;
@@ -174,6 +201,7 @@ button,
   padding: 5px;
   border-radius: 5px;
   border-bottom: 2px solid;
+  border-bottom-color: #85837f; /* Fallback */
   border-bottom-color: var(--border-bottom-color);
   width: 90px;
   height: 33px;
@@ -200,11 +228,12 @@ button:focus,
 }
 
 .form-block:hover {
-  -webkit-box-shadow: 4px 3px 19px 0 #A1A2A7;
-          box-shadow: 4px 3px 19px 0 #A1A2A7;
+  -webkit-box-shadow: 4px 3px 19px 0 #a1a2a7;
+  box-shadow: 4px 3px 19px 0 #a1a2a7;
 }
 
-#contact-email, #contact-name {
+#contact-email,
+#contact-name {
   width: 130px;
   height: auto;
   font-size: 16px;
@@ -235,6 +264,7 @@ textarea {
 
 table {
   border: dashed;
+  border-color: #e15f55; /* Fallback */
   border-color: var(--table-border-color);
   border-spacing: 18px;
   margin: auto;
@@ -247,25 +277,25 @@ table {
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 .cloud-front {
   -webkit-animation-duration: 30s;
-          animation-duration: 30s;
+  animation-duration: 30s;
   -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
+  animation-name: cloud-move;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .footer {
@@ -276,10 +306,10 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 180px;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: auto;
+  margin-top: 180px;
 }
 
 .social_media_logo {
@@ -291,10 +321,9 @@ table {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
 }
 
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid-container {
     -ms-grid-columns: 1fr 15px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -320,9 +349,11 @@ table {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -332,9 +363,11 @@ table {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -343,43 +376,47 @@ table {
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(150px, 50px);
-            transform: translate(150px, 50px);
+    transform: translate(150px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(150px, 50px);
-            transform: translate(150px, 50px);
+    transform: translate(150px, 50px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
