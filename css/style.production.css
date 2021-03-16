@@ -136,7 +136,7 @@ a:active {
 }
 
 .grid__item {
-   width: 33.3%;
+  width: 100%;
 }
 
 /* end grid fallback */
