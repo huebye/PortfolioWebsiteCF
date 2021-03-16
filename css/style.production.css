@@ -188,6 +188,7 @@ a:active {
     padding: 10px;
     border-radius: 15px;
     width: auto;
+    margin: auto;
     border-bottom: 4px solid;
     border-bottom-color: #85837f; /* Fallback */
     border-bottom-color: var(--border-bottom-color);
